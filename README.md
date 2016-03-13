@@ -29,7 +29,7 @@ Comme tout site internet, il est extrêmement difficile de définir un public ci
 
 ### Stratégie et Design
 
-Actuellement, le collectif utilise un thème Wordpress fort générique. Il faut donc revoir ce design sur base d'un plan de route stratégique, qui répondra bien entendu aux objectifs cités ci-dessus. Avant de créer un design visuel, il faut donc préparer une arborescence efficace (sitemap) sur base de la **proposition se trouvant dans le repository du projet** (sur GitHub, donc), des tunnels de conversion (pour motiver l'utilisateur à *passer à l'action*) et des wireframes pour l'ensemble du site.
+Actuellement, le collectif utilise un thème Wordpress fort générique. Il faut donc revoir ce design sur base d'un plan de route stratégique, qui répondra bien entendu aux objectifs cités ci-dessus. Avant de créer un design visuel, il faut donc préparer une arborescence efficace (sitemap) sur base de la [proposition se trouvant dans le repository du projet](sitemap.md), des tunnels de conversion (pour motiver l'utilisateur à *passer à l'action*) et des wireframes pour l'ensemble du site.
 
 Il doit être possible de naviguer dans le site via d'autres moyens que le menu principal. Il vaut donc mieux prévoir des menus contextuels, des *calls to action*, etc.
 
@@ -50,7 +50,7 @@ Pour le dernier point, il s'agit d'ailleurs plus d'un conseil pour rester effica
 - Pour la partie pédagogique, il faut donc prévoir suffisamment d'espace pour le contenu textuel, y compris quelques exemples pour illustrer les explications. Il doit aussi être possible de télécharger, à des endroits précis, les outils nécessaires pour la réalisation d'une étape (par exemple: télécharger un *story-board* vierge).
 - Toutes les pages doivent être composées de façon à favoriser un référencement naturel le plus efficace possible. Pour ce faire, un fil d'Arianne, du code/choix sémantiques intelligents sont requis.
 
-Afin de retrouver toutes les informations concernant le contenu à prévoir pour ce projet, consultez **le tableau des pages et contenus se trouvant dans le repository des consignes du projet**.
+Afin de retrouver toutes les informations concernant le contenu à prévoir pour ce projet, consultez [le tableau des pages et contenus](content.md).
 
 ### Fonctionnalités
 
