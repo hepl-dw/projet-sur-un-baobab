@@ -8,8 +8,7 @@
 | **À propos - Équipe**                               | Présentation de l'équipe, photos, liens utiles                                                                  |
 | **À propos - Photos**                               | Galerie de photos                                                                                               |
 | **Courts-métrages**                                 | Liste des courts-métrages (projets) réalisés                                                                    |
-| **Courts-métrages - Projet**                        | Contenu divisé en 3 "onglets" : *Film* (Vidéo, fiche technique), *Projet* (Présentation du projet),
-                                                        *Making Of* (Description du processus de réalisation des ateliers)                                              |
+| **Courts-métrages - Projet**                        | Contenu divisé en 3 "onglets" : *Film* (Vidéo, fiche technique), *Projet* (Présentation du projet), *Making Of* (Description du processus de réalisation des ateliers) |
 | **Courts-métrages - Diffusion**                     | Espace pour demander l'accès ou accéder au projet pour la diffusion                                             |
 | **Anime toi-même !**                                | Description "tutoriel" avec liens                                                                               |
 | **Anime toi-même ! - Crée ton mini-studio**         | Tutoriel de création d'un mini-studio                                                                           |
