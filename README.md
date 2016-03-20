@@ -23,7 +23,7 @@ L'objectif principal de ses ateliers est d'apporter l'apprentissage d'un nouveau
 Comme tout site internet, il est extrêmement difficile de définir un public cible "type". Chaque individu peut réagir différemment devant une interface web. Le public cité ci-dessous n'est donc qu'une cible théorique des principales personnes susceptibles de s'intéresser au site.
 
 - Les partenaires du collectif (particuliers ou associations)
-- Les participants aux ateliers (6 à 20 ans) et leurs proches
+- Les participants aux ateliers (à partir de 6 ans) et leurs proches
 - Les programmeurs de festivals de courts-métrages
 - La presse
 
