@@ -1,0 +1,89 @@
+{
+
+      "tasks" : {
+            "default": [
+                  "build:assets",
+                  "build:css",
+                  "build:js",
+                  "watch"
+            ],
+            "clean": [
+                  "clean:assets",
+                  "clean:css",
+                  "clean:js"
+            ],
+            "build": [
+                  "build:assets",
+                  "build:css",
+                  "build:js"
+            ],
+            "watch": [
+                  "watch:assets",
+                  "watch:css",
+                  "watch:js"
+            ]
+      },
+
+      "assets": {
+            "files": [
+                  {
+                        "src": ["source/assets/img/**/*","!source/assets/img/**/*.db"],
+                        "dist": "assets/img"
+                  }
+            ],
+            "options": {
+                  "imagemin": {
+                        "optimizationLevel": 3,
+                        "progressive": true,
+                        "interlaced": true
+                  }
+            },
+            "watch": [
+                  "source/assets/img/**",
+            ]
+      },
+
+      "scripts": {
+            "files": [
+                  {
+                        "src": [
+                              "source/js/front.js",
+                              "source/js/**/*.js"
+                        ],
+                        "dist": "assets/js/",
+                        "filename": "scripts.js",
+                        "minfilename": "scripts.min.js"
+                  }
+            ],
+            "options": {
+                  "jshint": {
+                        "lookup" : false
+                  },
+                  "uglify": {}
+            },
+            "watch": [
+                  "source/js/**/*.js"
+            ]
+      },
+
+      "styles": {
+            "files": [
+                  {
+                        "src": "source/sass/front.scss",
+                        "dist": "assets/css/",
+                        "filename": "style.min.css"
+                  }
+            ],
+            "options": {
+                  "scss": {
+                        "css": "assets/css",
+                        "sass": "source/sass",
+                        "image": "/",
+                        "style": "expanded"
+                  }
+            },
+            "watch": [
+                  "source/sass/**/*.scss"
+            ]
+      }
+}
