@@ -2,10 +2,10 @@
 <html lang="fr">
 <head>
       <meta charset="UTF-8">
-      <title><?php bloginfo('name');?></title>
+      <title>Mon super site</title>
 </head>
 <body>
-      
-      <h1 class="titre"><?php bloginfo('name');?></h1>
-
-      <p class="slogan"><?php bloginfo('description');?></p>
+      <header class="mon-header">
+            <h1><?php bloginfo('name');?></h1>
+      </header>
+      <main class="ma-page">
