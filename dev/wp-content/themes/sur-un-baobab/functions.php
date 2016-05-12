@@ -30,6 +30,11 @@ register_taxonomy( 'project-type', 'project', [
             'hierarchical' => true
       ] );
 
+/*
+ * Defines navigation menus.
+ */
+
+register_nav_menu( 'main-nav', __('Menu principal, affiché dans le header.','b') );
 
 /*
  * Generates a custom excerpt, used on the homepage
@@ -71,4 +76,56 @@ function get_the_link($string, $replace = '%s')
 function the_link($string, $replace = '%s')
 {
       echo get_the_link($string, $replace);
+}
+
+/*
+ * Generates a custom menu array
+ */
+
+function b_get_menu_id( $location )
+{
+      $a = get_nav_menu_locations();
+      if (isset($a[$location])) $a[$location];
+      return false;
+}
+
+function b_get_menu_items( $location )
+{
+      $navItems = [];
+      foreach (wp_get_nav_menu_items( b_get_menu_id($location) ) as $obj) {
+            // Si vous avoir un contrôle sur les liens affichés, c'est ici. (Par exemple: mettre $item->isCurrent à true|false)
+            $item = new stdClass();
+            $item->url = $obj->url;
+            $item->label = $obj->title;
+            $item->icon = $obj->classes[0];
+            array_push($navItems, $item);
+      }
+      return $navItems;
+}
+
+/*
+ *    Generates a languages menu
+ *    Based on Polylang (plugin)
+ */
+
+function b_get_languages()
+{
+      $langItems = [];
+      $rawItems = pll_the_languages( [
+            'echo' => false,
+            'hide_if_empty' => false,
+            'hide_if_no_translation' => false,
+            'raw' => true
+      ] );
+
+      foreach ($rawItems as $raw) {
+            // Si vous souhaitez faire des manipulations sur le format des données, c'est ici. (Par exemple: changer les codes de langues de "es" à "ESP" pour des besoins en CSS)
+            $item = new stdClass();
+            $item->label = $raw['name'];
+            $item->url = $raw['url'];
+            $item->code = $raw['slug'];
+            array_push($langItems, $item);
+      }
+
+      return $langItems;
 }
