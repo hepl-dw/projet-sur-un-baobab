@@ -85,7 +85,7 @@ function the_link($string, $replace = '%s')
 function b_get_menu_id( $location )
 {
       $a = get_nav_menu_locations();
-      if (isset($a[$location])) $a[$location];
+      if (isset($a[$location])) return $a[$location];
       return false;
 }
 
